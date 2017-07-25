@@ -1,0 +1,27 @@
+@import '../../node_modules/normalize.css/normalize';
+
+@import 'mixins';
+@import 'variables';
+@import 'base';
+
+html {
+  // Applied when embedded using Pym.js
+  font-size: 10px;
+}
+
+body {
+  // This helps Pym.js more more accurately measure our <body>
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+}
+
+.source {
+  font-family: $sans;
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+}
+
+// Your styles go here
